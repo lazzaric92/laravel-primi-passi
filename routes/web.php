@@ -17,3 +17,8 @@ Route::get('/', function () {
     $user = "Darkness";
     return view('pages.home', compact("user"));
 });
+
+Route::get('/about', function () {
+    $user = "Darkness";
+    return view('pages.about', compact("user"));
+});
