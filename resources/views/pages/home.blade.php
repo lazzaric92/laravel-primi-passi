@@ -7,7 +7,11 @@
 </head>
 <body>
     <header>
-        <h1>Hello World!</h1>
+        <h1>Hello {{ $user }}, my old friend! </h1>
+
+        @if (lcfirst($user) === "darkness")
+        <h2>I've come to talk with you again...</h2>
+        @endif
     </header>
 </body>
 </html>
